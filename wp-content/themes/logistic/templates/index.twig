@@ -1,0 +1,28 @@
+{% extends "base.twig" %}
+
+{% block content %}
+	<div class="main_page">
+	<section class="banner_wrap">
+		<span class="scroll_text">scroll</span>
+		<span class="line_scroll">  </span>
+		<div class="container">
+			<div class="banner_inner">
+				<div class="h1 title">Lorem ipsum <span>dolor sit amet,</span> consectetur adipiscing</div>
+				<div class="subtitle">Our team of experts understand your specialists needs and urgent response times
+				</div>
+				<a href="#" class="button"><span>Get a quote online</span></a>
+			</div>
+		</div>
+	</section>
+		<section class="clients_wrap">
+			<div class="container clients_padding">
+				<div class="h1 title">Our clients</div>
+				<div class="clients_inner">
+					<div class="client_item">
+						<img src="{{ theme.link }}/images/clients/client.png" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+{% endblock %}

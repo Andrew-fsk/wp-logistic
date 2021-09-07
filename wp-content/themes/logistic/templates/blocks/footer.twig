@@ -1,0 +1,88 @@
+{% block footer %}
+    <footer class="footer">
+        <div class="footer_top">
+            <div class="container">
+                <div class="top_inner">
+                    <div class="contacts_inner">
+                        <div class="h1 title">Contact us</div>
+                        <div class="subtitle"><span>Call now to get an instant offer</span> or leave a request in the form
+                        </div>
+                        <div class="phone">
+                            <svg class="svg_icon">
+                                <use xlink:href="{{ site.theme.link }}/images/svg/sprite.svg#call"></use>
+                            </svg>
+                            <a href="tel: 01462410004">01462410004</a> / <a href="tel: 01234608404">01234608404</a></div>
+                        <div class="address">
+                            <svg class="svg_icon">
+                                <use xlink:href="{{ site.theme.link }}/images/svg/sprite.svg#map"></use>
+                            </svg>
+                            <span>Unit 4 The Old Granary, Caldecote Road, Baldock, SG7 5LE Company Registered</span></div>
+                        <div class="text_block">
+                            <div class="text_inner">
+                                <div class="block_title">Seo text</div>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi felis, in suspendisse
+                                    nulla
+                                    egestas eget adipiscing id tortor. Et lectus malesuada libero placerat. Convallis ipsum
+                                    odio
+                                    metus auctor nam. Mauris, nullam ullamcorper curabitur consectetur elementum arcu elit
+                                    pharetra
+                                    in. Scelerisque ut arcu ut urna, ultrices.
+                                </p>
+                                <p>
+                                    Amet, sed eget velit eleifend dolor arcu, aliquam quis. Ut vitae sit eleifend
+                                    pellentesque. Sit
+                                    sed vulputate sed dolor egestas hac vitae scelerisque. Vulputate hac nec, adipiscing
+                                    aliquam
+                                    nunc. Tellus duis at eget nunc semper ultricies ut sit pellentesque. Nisl purus non
+                                    lorem
+                                    pellentesque eget. Arcu diam amet, diam sed ipsum sit feugiat. Et lectus malesuada
+                                    libero
+                                    placerat. Convallis ipsum odio metus auctor nam. Mauris, nullam ullamcorper curabitur
+                                    consectetur elementum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="form_inner">
+                        <div class="form_title">Send us a message</div>
+                        <div class="form_subtitle">and we will contact you</div>
+                        <div class="input_block icon">
+                            <input type="text" class="form_input" placeholder="Pickup postcode">
+                            <svg class="svg_icon">
+                                <use xlink:href="{{ site.theme.link }}/images/svg/sprite.svg#post"></use>
+                            </svg>
+                        </div>
+                        <div class="input_block icon">
+                            <input type="text" class="form_input map" placeholder="Destination postcode">
+                            <svg class="svg_icon">
+                                <use xlink:href="{{ site.theme.link }}/images/svg/sprite.svg#map"></use>
+                            </svg>
+                        </div>
+                        <div class="input_block icon">
+                            <textarea name="" id="" class="form_textarea" placeholder="Message details"></textarea>
+                            <svg class="svg_icon">
+                                <use xlink:href="{{ site.theme.link }}/images/svg/sprite.svg#message"></use>
+                            </svg>
+                        </div>
+
+                        <div class="button form_button"><span>Get a quote online</span></div>
+                        <div class="request">Please correct errors before submitting this form</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="bottom_inner">
+                    <span class="element"><a href="text_page.php" class="privacy_policy">Privacy Policy</a></span>
+                    <span class="element">Copyright © 2021 HBC Logistics. All rights reserved </span>
+                    <span class="element"><span>Website developed: </span><a
+                                href="https://www.mega-site.com.ua">Megasite.</a></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    {{ function('wp_footer') }}
+{% endblock %}

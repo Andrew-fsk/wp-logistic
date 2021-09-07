@@ -1,0 +1,152 @@
+.modal-form{
+  padding: 40px 65px;
+  @include breakpoint(sm-down){
+    padding: 15px 20px;
+  }
+  .fancybox-close-small{
+    display: none;
+  }
+  .close-modal{
+    position: absolute;
+    right: 0;
+    top: -24px;
+    cursor: pointer;
+  }
+  .modal-form-title{
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+    color: #222222;
+    margin-bottom: 15px;
+    @include breakpoint(sm-down){
+      font-size: 28px;
+      line-height: initial;
+    }
+  }
+  .validation-field{
+    margin-bottom: 10px;
+  }
+  .forgot-text{
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: rgba(34, 34, 34, 0.6);
+    margin-bottom: 13px;
+    a{
+      color: #222222;
+    }
+  }
+  .button{
+    margin-bottom: 13px;
+    width: 100%;
+    &:hover{
+      color: $color-1;
+    }
+  }
+  .social-login{
+    margin-bottom: 10px;
+    @include flexbox;
+    .soc-login{
+      cursor: pointer;
+      width: calc(50% - 5px);
+      display: block;
+      &:first-of-type{
+        margin-right: 5px;
+      }
+      &:last-of-type{
+        margin-left: 5px;
+      }
+      img{
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.confirm{
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  input{
+    display: none;
+    &:checked + .checkbox{
+      background-color: #222222;
+      &:after{
+        opacity: 1;
+      }
+    }
+  }
+  .checkbox{
+    display: block;
+    border: 1px solid #222222;
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 16px;
+    height: 16px;
+    &:after{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-size: 10px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url("/images/svg/check arrow.svg");
+    }
+  }
+  .checkbox-text{
+    font-size: 14px;
+    line-height: 19px;
+    color: rgba(34, 34, 34, 0.6);
+    @include user-select(none);
+  }
+}
+
+.confirm-modal{
+  padding: 65px;
+  width: 600px;
+  max-width: 100%;
+  border-radius: 5px;
+  @include breakpoint(sm-down){
+    padding: 15px 20px;
+  }
+  .text{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #222222;
+    margin-bottom: 35px;
+    @include breakpoint(smxs){
+      margin-bottom: 25px;
+    }
+  }
+  .buttons-row{
+    @include flexbox;
+    @include justify-content(space-between);
+    @include breakpoint(smxs){
+      @include flex-direction(column);
+      @include align-items(center);
+      .button{
+        &:first-of-type{
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+  .button{
+    width: 160px;
+    height: 41px;
+    padding: 10px 20px;
+    text-transform: initial;
+    &:hover{
+      color: $color-1;
+    }
+  }
+  .fancybox-close-small{
+    display: none;
+  }
+}

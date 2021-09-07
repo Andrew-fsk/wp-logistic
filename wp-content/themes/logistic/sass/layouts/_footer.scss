@@ -1,0 +1,293 @@
+.footer{
+  color: #ffffff;
+  p{
+    color: inherit;
+  }
+  background-image:url($root + "fon/footer.jpg") ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  &:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: #111111;
+    opacity: .8;
+    backdrop-filter: blur(4px);
+  }
+  .footer_top{
+    padding-top: 130px;
+    padding-bottom: 130px;
+    position: relative;
+    z-index: 2;
+    @include breakpoint(xs){
+      padding-top: 100px;
+      padding-bottom: 60px; 
+    }
+    .top_inner{
+      @include flexbox;
+      margin: 0 -15px;
+      @media(max-width: 1600px){
+        flex-direction: column;
+        margin: 0;
+      }
+    }
+    .contacts_inner{
+      width: 70%;
+      margin: 0 15px;
+      @media(max-width: 1600px){
+        width: 100%;
+        margin: 0 0 60px;
+      }
+    }
+    .title{
+      color: #ffffff;
+      margin-bottom: 5px;
+    }
+    .subtitle{
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 140%;
+      margin-bottom: 32px;
+      @include breakpoint(xs){
+        font-size: 20px;
+      }
+    }
+    .phone{
+      cursor: pointer;
+      margin-left: 20px;
+      margin-bottom: 17px;
+      line-height: 1.2;
+    }
+    .address{
+      margin-left: 20px;
+      margin-bottom: 50px;
+      line-height: 1.2;
+    }
+    .svg_icon{
+      fill:$color-1;
+      width: 18px;
+      height: 18px;
+      margin-right: 10px;
+    }
+    .text_block{
+      margin-left: 20px;
+      height: 330px;
+      background: rgba(34, 34, 34, 0.8);
+      position: relative;
+      padding: 25px 0;
+      @include breakpoint(xs){
+        margin-left: 7px;
+        width: 100%;
+      }
+      &:after{
+        content: '';
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        bottom: -20px;
+        left: -20px;
+        z-index: -1;
+        border-left: 20px solid $color-1;
+        border-bottom: 20px solid $color-1;
+        @include breakpoint(xs){
+          bottom: -5px;
+          left: -5px;
+          border-left: 7px solid $color-1;
+          border-bottom: 7px solid $color-1;
+        }
+      }
+    }
+    .text_inner{
+      height: 100%;
+      padding: 0 30px;
+      overflow-y: auto;
+    }
+    .block_title{
+      font-weight: 600;
+      font-size: 36px;
+      margin-bottom: 15px;
+      @include breakpoint(xs){
+        font-size: 20px;
+      }
+    }
+    .form_inner{
+      width: 30%;
+      margin: 0 15px;
+      background: rgba(34, 34, 34, 0.8);
+      position: relative;
+      padding: 36px 43px 48px;
+      @include flexbox;
+      @include flex-direction(column);
+      @include align-items(center);
+
+      @media(max-width: 1600px){
+        width: 40%;
+        margin: 0 auto;
+      }
+        @include breakpoint(md-down){
+          width: 60%;
+
+        }
+      @include breakpoint(sm-down){
+        width: 75%;
+      }
+      @include breakpoint(xs){
+        width: 100%;
+        padding: 15px;
+      }
+      &:after{
+        content: '';
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        z-index: -1;
+        border-left: 10px solid $color-1;
+        border-top: 10px solid $color-1;
+        @include breakpoint(xs){
+          top: -5px;
+          left: -5px;
+          border-left: 5px solid $color-1;
+          border-top: 5px solid $color-1;
+        }
+      }
+      &:before{
+        content: '';
+        width: 90px;
+        height: 90px;
+        position: absolute;
+        bottom: -10px;
+        right: -10px;
+        z-index: -1;
+        border-right: 10px solid $color-1;
+        border-bottom: 10px solid $color-1;
+        @include breakpoint(xs){
+          bottom: -5px;
+          right: -5px;
+          border-right: 5px solid $color-1;
+          border-bottom: 5px solid $color-1;
+        }
+      }
+    }
+    .form_title{
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 5px;
+      text-align: center;
+      @include breakpoint(xs){
+        font-size: 20px;
+      }
+    }
+    .form_subtitle{
+      font-size: 24px;
+      margin-bottom: 32px;
+      text-align: center;
+      @include breakpoint(xs){
+        font-size: 16px;
+      }
+    }
+    .form_input{
+      width: 320px;
+      border: none;
+      border-top:1px solid rgba(255,255,255,0.15) ;
+      border-bottom:1px solid rgba(255,255,255,0.15) ;
+      background-color: transparent;
+      padding: 16px 50px 18px 20px;
+      margin-bottom: 10px;
+      color: #ffffff;
+      transition: 0.2s;
+      opacity: 1;
+      @include breakpoint(sxs){
+        width: 100%;
+        font-size: 14px;
+        padding: 15px 40px 15px 10px;
+      }
+      &::placeholder{
+        transition: inherit;
+          color: inherit;
+      }
+    }
+    .icon{
+      position: relative;
+      .svg_icon{
+        transition: 0.2s;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        fill: rgba(255,255,255,0.2);
+        margin: 0;
+        @include breakpoint(xs){
+          right: 10px;
+        }
+      }
+    }
+    .form_textarea{
+      @extend .form_input;
+      height: 140px;
+      margin-bottom: 20px;
+    }
+
+    input,textarea{
+      &:focus,&:active{
+        &::placeholder{
+          font-size: 0;
+          opacity: 0;
+        }
+
+      }
+      &:focus + .svg_icon{
+        fill: #ffffff;
+      }
+    }
+    .form_button{
+      color: #ffffff;
+      span{
+        color: #ffffff;
+      }
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .request{
+      font-size: 12px;
+      line-height: 1.2;
+      text-align: center;
+    }
+  }
+  .footer_bottom{
+    position: relative;
+    z-index: 2;
+    padding:  15px 0;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    font-size: 14px;
+    a{
+      transition: 0.4s;
+      &:hover{
+        color:$color-1;
+      }
+    }
+  }
+  .bottom_inner{
+    @include flexbox;
+    @include justify-content(space-between);
+    @include breakpoint(xs){
+      @include flex-direction(column);
+      @include align-items(center);
+      text-align: center;
+    }
+    .element{
+      @include breakpoint(xs){
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

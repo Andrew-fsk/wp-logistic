@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+@import "mixins/compass";
+@import "mixins/breakpoints";
+@import "mixins/flexbox";
+@import "mixins/clearfix";
+@import "mixins/list-reset";
+@import "mixins/user-select";
+@import "mixins/container-relative";
+@import "mixins/fontface";
+@import "mixins/placeholder";
+@import "mixins/object-fit";
+body{padding: 0;}
+
+// base
+@import "variables";
+@import "grid";
+@import "fonts";
+@import "sprites";
+@import "reset";
+
+// components
+@import "components/button";
+@import "components/breadcrumbs";
+@import "components/pagination";
+
+// libs
+@import "libs/popup-slide";
+@import "libs/select2";
+@import "libs/fancybox3";
+@import "libs/slick-theme";
+
+//layouts
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/main-page";
+@import "layouts/services";
+@import "layouts/news";
+@import "layouts/text_page";

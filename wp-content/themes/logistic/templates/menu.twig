@@ -1,0 +1,7 @@
+{% if menu %}
+	<nav class="menu">
+		{% for item in items %}
+		<a target="{{ item.target }}" href="{{ item.link }}" class="menu_link active">{{ item.title }}</a>
+		{% endfor %}
+	</nav>
+{% endif %}

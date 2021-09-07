@@ -1,0 +1,44 @@
+$font-family: 'Montserrat', sans-serif;
+$font-family-validation: $font-family;
+$font-family-headings: $font-family;
+
+$text-color: #222222;
+$color-1: #248AE9;
+
+$root: 'http://logistic/wp-content/themes/timber/images/';
+
+$font-size: 18px;
+$font-size-paragraph: 16px;
+$paragraph-margin: 24px; //margin-bottom
+$paragraph-height: 1.5;  //line-height
+$paragraph-color: $text-color;
+$list-image: false;  //list.png
+
+$heading-margin: 32, 30 , 20, 20, 20, 15;
+$heading-font-size: 64, 35 , 32 , 28, 26, 24;
+$heading-font-weight: 600,700,700,700,700,700; // 1 = "normal"(400)
+$heading-uppercase: 0,0,0,0,0,0; // 0 = "none", 1 = "uppercase"
+$heading-text-align: l,c,c,c,c,c; // c = "center", l = "left", r = "right"
+$heading-color: $text-color;
+
+// SM Heading sizes
+$sm-heading-change: true;
+$sm-heading-margin: 25, 35, true, true, true, false;
+$sm-heading-font-size: 48, 28, 24, true, true, false;
+// XS Heading sizes
+$xs-heading-change: true;
+$xs-heading-margin: 20, true, true, true, false, false;
+$xs-heading-font-size: 32, 24, 22, 22, 20, 18;
+
+
+$background-color: #ffffff;
+$link-color: $color-1;
+$link-hover-color: false;
+
+$table-border-color: #d6d6d6;
+$table-color: #3c3c3c;
+$table-heading-color: false;
+
+$z-index-blocker: 9;
+$z-index-modal: 10;
+$z-index-close-modal: 11;

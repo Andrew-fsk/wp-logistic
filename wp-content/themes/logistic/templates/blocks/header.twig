@@ -1,0 +1,18 @@
+<header class="header">
+    <div class="header_inner">
+        <div class="logo_block">
+            <a href="{{ site.url }}" class="logo">
+                <img src="{{ theme.link }}/images/logo.png" alt="">
+            </a>
+        </div>
+        {% include 'menu.twig' %}
+        <div class="menu_btn">
+            <span></span>
+        </div>
+        <div class="user">
+            <svg class="svg_icon">
+                <use xlink:href="{{ theme.link }}/images/svg/sprite.svg#user"></use>
+            </svg>
+            <span>MY ACCOUNT</span></div>
+    </div>
+</header>

@@ -1,0 +1,44 @@
+.breadcrumbs{
+  @include flexbox;
+  margin: 0 0 10px 0;
+  li{
+    list-style: none;
+    margin: 0;
+    &:last-of-type{
+      a{
+        cursor: default;
+        color: #ffffff;
+        font-weight: 600;
+        margin-right: 0;
+        &:after{
+          content: initial;
+        }
+      }
+    }
+  }
+  a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    margin-right: 5px;
+    padding-right: 10px;
+    position: relative;
+    transition: all .3s;
+    &:hover{
+      color: #ffffff;
+    }
+    &::after{
+      content: "\\";
+      position: absolute;
+      right: 1px;
+      font-size: 16px;
+      color: rgba(255, 255, 255, 1);
+      bottom: 0;
+    }
+  }
+}
+
+.chefs-title{
+  text-transform: initial;
+  margin-bottom: 40px;
+}
